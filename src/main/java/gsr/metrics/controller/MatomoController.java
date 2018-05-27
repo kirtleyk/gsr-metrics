@@ -9,9 +9,8 @@ public class MatomoController {
 
 	@RequestMapping("/")
 	public String home() {
-		User user = new User();
-		user.setFirstName("Kevin");
-		user.setLastName("Kirtley");
+		User user;
+		user = new User("Kevin", "Kirtley", "kevin.kirtley@gmail.com");
 		return user.toString();
 	}
 	
